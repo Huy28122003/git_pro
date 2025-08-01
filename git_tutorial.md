@@ -9,7 +9,7 @@
 ### 📋 Giải thích
 
 - **<Tiêu đề>**: Loại commit (ví dụ: `feat`, `fix`, `docs`, `refactor`, v.v.)
-- **<Mã task>**: Mã định danh task hoặc issue (ví dụ: `TASK-123`, `BUG-456`)
+- **<Mã task>**: Mã định danh task hoặc issue (ví dụ: `TASK-123`, `BUG-456`) được đặt trong các phần mềm quản lý task như JIRA
 - **<Mô tả task>**: Mô tả ngắn gọn, rõ ràng về thay đổi
 
 ### 📍 Ví dụ
