@@ -60,3 +60,33 @@ git reset --mixed HEAD~1
 ```
 - `--mixed`: Hủy commit và **đưa thay đổi về Working Directory**  
   → Các file sẽ trở về trạng thái *unstaged*.
+
+### 2️⃣ Xóa Branch
+
+### 🗑 Xóa branch ở local
+
+```bash
+git branch -D localBranchName
+```
+
+> Dùng để xóa một branch ở máy local.  
+> Nếu bạn muốn xóa branch đã được merge rồi, có thể dùng `-d` thay vì `-D`.
+
+---
+
+### 🌐 Xóa branch ở remote
+
+```bash
+git push origin --delete remoteBranchName
+```
+
+> Cách đầy đủ để xóa một branch từ remote repository (ví dụ: GitHub, GitLab).
+
+Hoặc dùng cú pháp rút gọn:
+
+```bash
+git push origin :remoteBranchName
+```
+
+> Cú pháp thay thế nhanh, tác dụng tương đương.
+
