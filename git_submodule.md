@@ -9,8 +9,6 @@
 ## 📄 Tác dụng của file `.gitmodules`
 
 File `.gitmodules` là nơi Git lưu lại **thông tin cấu hình cho các submodule** (repo con) được sử dụng trong một dự án Git chính (monorepo). Mỗi submodule là một repository Git độc lập được nhúng vào repo chính, thường dùng để tách biệt các phần chức năng, mô-đun hóa dự án lớn.
-<img width="1329" height="196" alt="image" src="https://github.com/user-attachments/assets/9e8ad7f5-3a45-4a02-adde-bb9b3a8d8f31" />
-
 
 ---
 
