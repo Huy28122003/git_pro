@@ -90,3 +90,89 @@ git push origin :remoteBranchName
 
 > Cú pháp thay thế nhanh, tác dụng tương đương.
 
+## 3️⃣ Git Merge vs Rebase
+
+### 🔀 Git Merge
+
+Gộp các commit của hai nhánh lại với nhau dựa trên thời gian, tạo ra một commit hợp nhất (**merge commit**).
+
+#### 📌 Cách sử dụng:
+```bash
+git checkout <branch-bạn-muốn-gộp-vào>
+git merge <branch-nguồn>
+```
+
+#### 📘 Ví dụ:
+
+Giả sử có 3 nhánh:
+- `main`
+- `Alpha`: tạo từ `main`, thêm commit `D`, `E`
+- `Beta`: tạo từ `main`, thêm commit `F`, `G`
+
+Cấu trúc ban đầu:
+```
+(main)
+A--B--C---D--E (Alpha)
+       \
+        -F--G (Beta)
+```
+
+Khi đang ở nhánh `Beta`, muốn nhận thay đổi từ `Alpha`:
+```bash
+git checkout Beta
+git merge Alpha
+```
+
+Sau khi merge:
+```
+(main)
+A--B--C---D--E (Alpha)
+       \       \
+        -F--G--M (Beta)
+```
+
+✅ Commit `M` là **merge commit**, chứa toàn bộ thay đổi từ `Alpha` và `Beta`.
+
+---
+
+#### ⚠️ Khi gặp conflict:
+
+1. Xem file bị conflict và sửa thủ công
+2. Dùng:
+   ```bash
+   git add .
+   git merge --continue
+   ```
+   Hoặc nếu muốn sửa message:
+   ```bash
+   git commit -m "resolve conflict"
+   ```
+
+3. Đẩy thay đổi:
+   ```bash
+   git push
+   ```
+
+---
+
+#### 🔄 Hủy merge:
+
+Nếu muốn **hoàn tác merge** (chưa commit hoặc đã commit):
+
+```bash
+git reset --hard <commit-trước-khi-merge>
+```
+
+> 📍 Dùng `git log` để tìm `commit-trước-khi-merge`.
+
+---
+
+#### 📝 Lưu ý:
+
+- `git pull` = `git fetch` + `git merge`
+- Merge dùng phổ biến trong thực tế khi làm việc nhóm
+- Sử dụng **Merge Request (MR)** hoặc **Pull Request (PR)** để review trước khi merge
+
+---
+
+
