@@ -13,21 +13,6 @@ File `.gitmodules` là nơi Git lưu lại **thông tin cấu hình cho các sub
 
 ---
 
-### 📌 Cấu trúc chung
-
-Mỗi block `[submodule "<tên>"]` trong file `.gitmodules` gồm:
-
-- `path`: Đường dẫn tương đối đến thư mục submodule trong dự án chính.
-- `url`: Địa chỉ remote Git repo chứa mã nguồn của submodule đó.
-
-Ví dụ:
-
-```ini
-[submodule "app/features/account"]
-  path = app/features/account
-  url = https://git-sds.softdreams.vn:7990/scm/epm/feat_account.git
-
-
 <ol>
   <li>
     <p><strong>Duyệt qua tất cả các repo con và xem log:</strong></p>
