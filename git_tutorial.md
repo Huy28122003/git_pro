@@ -90,9 +90,7 @@ git push origin :remoteBranchName
 
 > Cú pháp thay thế nhanh, tác dụng tương đương.
 
-## 3️⃣ Git Merge vs Rebase
-
-### 🔀 Git Merge
+## 3️⃣ Git Merge
 
 Gộp các commit của hai nhánh lại với nhau dựa trên thời gian, tạo ra một commit hợp nhất (**merge commit**).
 
