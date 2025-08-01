@@ -1,4 +1,4 @@
-Dự án được quản lý bởi git và trong dự án có nhiều repo riêng
+<h1>Dự án được quản lý bởi git và trong dự án có nhiều repo riêng</h1>
 
 <p align="center">
   <img src="https://github.com/user-attachments/assets/3e81bd19-e0ed-4e4f-9176-126a9b9f0959" width="45%"/>
