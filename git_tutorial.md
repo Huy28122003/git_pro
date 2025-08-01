@@ -1,3 +1,32 @@
+## 🎯 Quy ước đặt tên commit
+
+### 📌 Cấu trúc
+
+```
+<Tiêu đề>/<Mã task>/<Mô tả task>
+```
+
+### 📋 Giải thích
+
+- **<Tiêu đề>**: Loại commit (ví dụ: `feat`, `fix`, `docs`, `refactor`, v.v.)
+- **<Mã task>**: Mã định danh task hoặc issue (ví dụ: `TASK-123`, `BUG-456`)
+- **<Mô tả task>**: Mô tả ngắn gọn, rõ ràng về thay đổi
+
+### 📍 Ví dụ
+
+```bash
+feat/TASK-101/thêm màn hình đăng nhập  
+fix/BUG-202/sửa lỗi không load được dữ liệu  
+docs/CHORE-999/cập nhật hướng dẫn cài đặt  
+```
+
+### ✅ Lưu ý
+
+- Mô tả task nên viết bằng tiếng Việt không dấu hoặc tiếng Anh tùy theo team.
+- Dùng chữ thường, phân cách bằng dấu `-` nếu cần.
+- Không kết thúc bằng dấu chấm.
+
+
 | Loại Commit | Tiêu Đề                 | Mô tả                                                                 | Emoji |
 |-------------|-------------------------|-----------------------------------------------------------------------|--------|
 | `feat`      | Features                | Một tính năng mới                                                    | ✨     |
