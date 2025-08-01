@@ -7,6 +7,27 @@
 
 <h2>Dưới đây là một số câu lệnh làm việc với dự án có dạng submodule</h2>
 
+## 📄 Tác dụng của file `.gitmodules`
+
+File `.gitmodules` là nơi Git lưu lại **thông tin cấu hình cho các submodule** (repo con) được sử dụng trong một dự án Git chính (monorepo). Mỗi submodule là một repository Git độc lập được nhúng vào repo chính, thường dùng để tách biệt các phần chức năng, mô-đun hóa dự án lớn.
+
+---
+
+### 📌 Cấu trúc chung
+
+Mỗi block `[submodule "<tên>"]` trong file `.gitmodules` gồm:
+
+- `path`: Đường dẫn tương đối đến thư mục submodule trong dự án chính.
+- `url`: Địa chỉ remote Git repo chứa mã nguồn của submodule đó.
+
+Ví dụ:
+
+```ini
+[submodule "app/features/account"]
+  path = app/features/account
+  url = https://git-sds.softdreams.vn:7990/scm/epm/feat_account.git
+
+
 <ol>
   <li>
     <p><strong>Duyệt qua tất cả các repo con và xem log:</strong></p>
