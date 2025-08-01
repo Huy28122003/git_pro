@@ -3,7 +3,7 @@
 ### 📌 Cấu trúc
 
 ```
-<Tiêu đề>/<Mã task>/<Mô tả task>
+<Loại commit>/<Mã task>/<Mô tả task>
 ```
 
 ### 📋 Giải thích
