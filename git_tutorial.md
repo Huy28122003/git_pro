@@ -43,9 +43,9 @@ docs/CHORE-999/cập nhật hướng dẫn cài đặt
 
 
 
-### ✅ 1. Undo commit gần nhất nhưng **giữ lại thay đổi trong file (unstaged)**
+### 1️⃣ Undo commit gần nhất nhưng **giữ lại thay đổi trong file (unstaged)**
 
-#### 🔁 Giữ lại thay đổi trong Staging Area:
+#### Giữ lại thay đổi trong Staging Area:
 ```bash
 git reset --soft HEAD~1
 ```
