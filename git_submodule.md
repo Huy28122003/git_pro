@@ -5,13 +5,14 @@
   <img src="https://github.com/user-attachments/assets/70e874f9-8417-47d4-9208-593fc82daeec" width="45%"/>
 </p>
 
-<h2>Dưới đây là một số câu lệnh làm việc với dự án có dạng submodule</h2>
 
 ## 📄 Tác dụng của file `.gitmodules`
 
 File `.gitmodules` là nơi Git lưu lại **thông tin cấu hình cho các submodule** (repo con) được sử dụng trong một dự án Git chính (monorepo). Mỗi submodule là một repository Git độc lập được nhúng vào repo chính, thường dùng để tách biệt các phần chức năng, mô-đun hóa dự án lớn.
 
 ---
+
+<h2>Dưới đây là một số câu lệnh làm việc với dự án có dạng submodule</h2>
 
 <ol>
   <li>
